@@ -753,9 +753,9 @@ $settings['file_scan_ignore_directories'] = [
 #   include __DIR__ . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'drupal8',
-  'username' => 'root',
-  'password' => '111',
+  'database' => 'dev01_quickjump',
+  'username' => 'dev01_quickjump',
+  'password' => '5cf0fe656e6e416975',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -764,3 +764,4 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_KlID4MrsBpn3YlgA5Df7ZJ0nYAUdyMTShX-YqP5svSknzpQRjZq6AZt5OehW2kDCcIa13tuAXg/sync';
+
