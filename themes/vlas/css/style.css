@@ -41,12 +41,49 @@ h2{
     position: relative;
 }
 
-/*Listings Everywhere*/
+#block-views-block-most-recent-listings-block-1 .views-col:hover{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    top: -2px;
+}
+
+#block-views-block-most-recent-listings-block-1 .views-col h4 {
+    color: #323232;
+    font-weight: bold;
+}
+
+#block-views-block-most-recent-listings-block-1  .views-field-field-category {
+    background-color: rgba(50, 50, 50, 0.9);
+    left: 10px;
+    position: absolute;
+    top: 30px;
+    color: #fff;
+    padding: 2px;
+}
+
+/*links category*/
+#block-views-block-most-recent-listings-block-1  .views-field-field-category a {
+    color: #fff;
+    font-size: 11px;
+}
+
+    /*Listings Everywhere*/
 #block-views-block-locations-block-1 .views-col{
     margin-bottom: 30px;
     margin-right: 30px;
     position: relative;
 }
+
+#block-views-block-locations-block-1 .views-field-name {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+
+#block-views-block-locations-block-1 .views-field-name a {
+    color: #fff;
+    font-size: 20px;
+}
+
 
 /*Categories on front page*/
 #block-views-block-categories-block-1 .views-col{
@@ -58,10 +95,20 @@ h2{
     width: 15%;
 }
 
+#block-views-block-categories-block-1 .views-col:hover{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    top: -2px;
+}
+
 #block-views-block-features-block-1 .views-col {
     margin-bottom: 30px;
     margin-right: 30px;
     position: relative;
+}
+
+#block-views-block-features-block-1 .views-field-field-feature-category {
+    font-weight: bold;
+    color: #4CC888;
 }
 
 /*You shouldn't miss*/
@@ -160,8 +207,12 @@ color: #fff;
 }
 
 .footer h2{
-color: #fff;
-text-align: inherit;
+    color: #fff;
+    text-align: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer a{
@@ -173,6 +224,12 @@ color: #fff;
 }
 
 /*Companies block*/
+.companies {
+    margin: 40px;
+    padding: 30px;
+    border-top: dashed 1px rgba(0, 0, 0, 0.12);
+}
+
 .region-companies{
 text-align: center;
 }
@@ -205,8 +262,13 @@ section#block-views-block-categories-block-3 {
 	width: 20%
 }
 
+/*main navigation in footer*/
 footer #block-mainnavigation {
-margin-left: 130px;
+    margin-left: 130px;
+    border-top: solid 1px;
+    display: inline-block;
+    margin-top: 30px;
+    clear: both;
 }
 
 /*---------------Page listings-----------------*/

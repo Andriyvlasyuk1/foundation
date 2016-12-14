@@ -178,10 +178,14 @@
   </div>
 {% endblock %}
 
+<div class="companies"> 
+	{{ page.companies }}
+</div>
+
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
-	{{ page.companies }}      
+	{# {{ page.companies }} #}     
 	{{ page.footer }}
     </footer>
   {% endblock %}
