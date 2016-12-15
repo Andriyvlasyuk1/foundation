@@ -52,9 +52,13 @@ h2{
     width: 100vw;
 }
 
-.form--inline {
+.path-frontpage .form--inline {
     text-align: center;
     margin-top: 100px;
+}
+
+.form--inline {
+    text-align: center;
 }
 /*Most resent listings*/
 #block-views-block-most-recent-listings-block-1 .views-col{
