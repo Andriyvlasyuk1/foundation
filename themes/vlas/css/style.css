@@ -111,15 +111,32 @@ h2{
     color: #4CC888;
 }
 
-/*You shouldn't miss*/
-#block-views-block-top-news-you-shouldn-t-miss-block-1 img {
+/*-----------------------------You shouldn't miss---------------------------------------------------------*/
+.view-top-news-you-shouldn-t-miss img {
 	float: left;
     margin-right: 20px;
 }
 
-#block-views-block-top-news-you-shouldn-t-miss-block-1 .views-field-body {
-	display: block;
+.view-top-news-you-shouldn-t-miss .views-field-view-node {
+    margin-top: 30px;
+    float: right;
 }
+
+.view-top-news-you-shouldn-t-miss .views-field-body {
+display: block;
+}
+
+/*--------------------------------- links to content------------------------------------*/
+.views-field-view-node {
+    margin-top: 20px;
+}
+
+.views-field-view-node a {
+    color: #4CC888;
+    font-weight: bold;
+    font-size: 13px;
+}
+
 
 .page-node-type-most-recent-listings .block-region-middle h2 {
 	text-align: left;
@@ -306,6 +323,22 @@ footer #block-mainnavigation {
 .path-listings .views-field-field-content-logo img {
     float: left;
     margin-right: 20px;
+}
+
+/*------------------- Page Blog -------------------------*/
+
+.view-display-id-page_1 .views-field-field-image img {
+    float: left;
+    margin-right: 20px;
+}
+
+.view-display-id-page_1 .views-field-view-node {
+    margin-top: 30px;
+    float: right;
+}
+
+.view-display-id-page_1 .views-field-body {
+    display: block;
 }
 
 /*------------------- Page taxonomy term-----------------*/
