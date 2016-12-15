@@ -122,7 +122,7 @@ h2{
     float: right;
 }
 
-.view-top-news-you-shouldn-t-miss .views-field-body {
+#block-views-block-top-news-you-shouldn-t-miss-block-1 .views-field-body {
 display: block;
 }
 
@@ -154,6 +154,24 @@ display: block;
 }
 
 
+/*-----------------------Slider----------------------*/
+.view-id-media {
+    width: 800px;
+}
+
+.view-id-media .slick__arrow {
+    margin-top: 210px;
+}
+
+.view-id-media .slick__arrow .slick-prev {
+    display: block;
+    position: absolute;
+    left: 730px;
+}
+
+.slick img {
+    max-height: 463px;
+}
 
 /*links locations in Most resent listings*/
 .views-field a {
@@ -375,3 +393,4 @@ footer #block-mainnavigation {
     float: left;
     margin-right: 20px;
 }
+
