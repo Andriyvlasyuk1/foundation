@@ -12,6 +12,11 @@
 	max-width: 40px;
 }
 
+/*----------------- Map -------------*/
+iframe {
+    width: 1200px;
+    height: 300px;
+}
 
 h2{
     color: #323232;
@@ -32,6 +37,25 @@ h2{
 
 }
 
+
+/*-----------------filters in exposed form-----------------*/
+.filters {
+    width: 75%;
+    margin:0 auto;
+}
+
+.filters-background {
+    background-image: url("../images/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.form--inline {
+    text-align: center;
+    margin-top: 100px;
+}
 /*Most resent listings*/
 #block-views-block-most-recent-listings-block-1 .views-col{
     border: 1px solid #f3f2f1;

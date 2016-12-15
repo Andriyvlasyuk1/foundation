@@ -56,6 +56,9 @@
  * @see html.html.twig
  */
 #}
+
+<div id="filters-background" class="filters-background">
+<div class="filters" class="filters">
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
@@ -95,8 +98,15 @@
         </div>
       {% endif %}
     </header>
+	<div class="header-topbar">
+		{{ page.header }}
+	</div>
   {% endblock %}
 {% endif %}
+	</div>
+</div>
+
+
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
@@ -106,7 +116,7 @@
       {% if page.header %}
         {% block header %}
           <div class="col-sm-12" role="heading">
-            {{ page.header }}
+           {# {{ page.header }} #}
           </div>
         {% endblock %}
       {% endif %}
