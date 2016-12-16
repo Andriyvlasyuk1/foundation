@@ -3,8 +3,15 @@
  */
 
 /*Main block width*/
-.region.region-front-page-content {
-	width: 120%;
+.path-frontpage .region-front-page-content {
+	/*width: 120%;*/
+    display: inline-block;
+    margin: 0 5%;
+    max-width: 1600px;
+}
+
+.path-frontpage .col-sm-9 {
+    width: auto;
 }
 
 /*logo*/
@@ -12,6 +19,9 @@
 	max-width: 40px;
 }
 
+.path-frontpage .main-container {
+    width: 1520px;
+}
 /*----------------- Map -------------*/
 iframe {
     width: 1200px;
@@ -63,8 +73,9 @@ h2{
 /*Most resent listings*/
 #block-views-block-most-recent-listings-block-1 .views-col{
     border: 1px solid #f3f2f1;
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
     /*padding: 16px 16px 10px 16px;*/
     position: relative;
 }
@@ -96,8 +107,9 @@ h2{
 
     /*Listings Everywhere*/
 #block-views-block-locations-block-1 .views-col{
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
     position: relative;
 }
 
@@ -118,6 +130,7 @@ h2{
     border: 1px solid #f3f2f1;
     margin-bottom: 30px;
     margin-right: 30px;
+    margin-left: 30px;
     /*padding: 16px 16px 10px 16px;*/
     position: relative;
     width: 15%;
@@ -129,8 +142,9 @@ h2{
 }
 
 #block-views-block-features-block-1 .views-col {
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     position: relative;
 }
 
@@ -140,6 +154,11 @@ h2{
 }
 
 /*-----------------------------You shouldn't miss---------------------------------------------------------*/
+.view-top-news-you-shouldn-t-miss {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 .view-top-news-you-shouldn-t-miss img {
 	float: left;
     margin-right: 20px;
@@ -199,6 +218,7 @@ display: block;
 
 .slick img {
     max-height: 463px;
+    margin-bottom: 20px;
 }
 
 /*links locations in Most resent listings*/
