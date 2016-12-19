@@ -1,6 +1,29 @@
 /**
  * Place your custom styles here.
  */
+body {
+    font-family: Poppins, Arial, sans-serif;
+    margin-top: 0px;
+}
+
+/*links*/
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+body a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/*-----------------Buttons-------------*/
+.btn {
+    color: #fff;
+    background-color: #4CC888;
+    border-color: #4CC888;
+}
+
 
 /*Main block width*/
 .path-frontpage .region-front-page-content {
@@ -44,9 +67,31 @@ h2{
     padding: 30px 0 10px 0;
     font-weight: bold;
     text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
 
 
 }
+
+.block-entity-fieldnodefield-content-logo {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.block-entity-fieldnodetitle span {
+    font-size: 40px;
+}
+
+.block-entity-fieldnodebody {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    font-size: 13px;
+    /*margin: 0 0 30px 0; */
+    padding: 8px 25px;
+}
+
+/*-----------------tables in node page---------------------*/
 
 
 /*-----------------filters in exposed form-----------------*/
@@ -192,13 +237,18 @@ display: block;
 
 /*Amenities in Most resent listings in all nodes*/
 .path-node .view-most-recent-listings .views-col {
-    border: 1px solid #f3f2f1;
     margin-bottom: 30px;
     margin-right: 30px;
     /*padding: 16px 16px 10px 16px;*/
     position: relative;
     width: 15%;
     padding: 5px;
+}
+
+.path-node .view-most-recent-listings .views-col img {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
 }
 
 
@@ -268,20 +318,6 @@ padding: 20px;
 /*body_features*/
 .views-field.views-field-body{
 	display: inline-block;
-}
-body {
-font-family: Poppins, Arial, sans-serif;
-}
-
-/*links*/
-body a {
-text-decoration: none;
-color: black;
-}
-
-body a:hover {
-text-decoration: none;
-color: black;
 }
 
 .footer {
