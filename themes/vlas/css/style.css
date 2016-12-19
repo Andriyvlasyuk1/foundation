@@ -21,6 +21,7 @@
 
 .path-frontpage .main-container {
     width: 1520px;
+    max-width: 99vw;
 }
 /*----------------- Map -------------*/
 iframe {
