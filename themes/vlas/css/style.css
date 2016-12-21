@@ -24,6 +24,25 @@ body a:hover {
     border-color: #4CC888;
 }
 
+.btn:hover{
+    color: #fff;
+    background-color: #38B976;
+    border-color: #38B976;
+}
+
+/*--------Preview-----------*/
+#edit-preview {
+    color: rgba(50, 50, 50, 0.5);
+    background-color: #fff;
+    border-color: #fff;
+}
+
+#edit-preview:hover {
+    color: rgba(50, 50, 50, 0.5);
+    background-color: #fff;
+    border-color: #fff;
+}
+
 
 /*Main block width*/
 .path-frontpage .region-front-page-content {
@@ -91,7 +110,15 @@ h2{
     padding: 8px 25px;
 }
 
-/*-----------------tables in node page---------------------*/
+/*-----------------search in node page---------------------*/
+.path-node #block-searchform {
+    padding: 10px;
+}
+
+#block-searchform {
+    border: solid 1px #f3f2f1;
+    margin-top: 20px;
+}
 
 
 /*-----------------filters in exposed form-----------------*/
@@ -109,14 +136,36 @@ h2{
 }
 
 .path-frontpage .form--inline {
-    text-align: center;
+    /*text-align: left;*/
     margin-top: 100px;
+}
+
+.path-frontpage .form--inline input{
+    height: 50px;
+    width: 100%;
+}
+
+.path-frontpage .form--inline span {
+    display: none;
+}
+
+.path-frontpage .form--inline button{
+    height: 50px;
+    width: 10%;
+}
+
+.path-frontpage .form--inline .form-item{
+    float: left;
+    width:30%;
+    margin: 1%;
 }
 
 .form--inline {
     text-align: center;
 }
-/*Most resent listings*/
+
+
+/*----------Most resent listings-----------*/
 #block-views-block-most-recent-listings-block-1 .views-col{
     border: 1px solid #f3f2f1;
     margin-right: 25px;
@@ -264,12 +313,17 @@ display: block;
 .view-id-media .slick__arrow .slick-prev {
     display: block;
     position: absolute;
-    left: 730px;
+    left: 90%;
 }
 
 .slick img {
     max-height: 463px;
     margin-bottom: 20px;
+}
+
+.path-node .form-group .view-display-id-block_1 {
+    width:100%;
+    height: 100%;
 }
 
 /*links locations in Most resent listings*/
@@ -293,6 +347,7 @@ padding: 2px;
 display: block;
 margin-bottom: 15px;
 }
+
 
 /*block title*/
 .col-sm-9 .block-title{
@@ -444,6 +499,13 @@ footer #block-mainnavigation {
     display: block;
 }
 
+.path-blog .col-sm-9 {
+    width:70%;
+}
+
+.path-blog .col-sm-3 {
+    width: 30%;
+}
 /*------------------- Page taxonomy term-----------------*/
 
 .path-taxonomy .region-content .views-row {
@@ -477,5 +539,26 @@ footer #block-mainnavigation {
 .path-taxonomy .views-field-field-main-image img {
     float: left;
     margin-right: 20px;
+}
+
+/*---------------- Second sidebar-----------------------*/
+/*contact block*/
+#block-contactblock {
+    padding: 10px;
+}
+/*-----------------Node----------------*/
+.path-node .col-sm-9 {
+    width:70%;
+}
+
+.path-node .col-sm-3 {
+    width: 30%;
+}
+
+/*--borders of sidebars--*/
+.path-node .col-sm-3 section {
+    border: solid 1px #f3f2f1;
+    margin-top: 20px;
+    padding: 15px;
 }
 
