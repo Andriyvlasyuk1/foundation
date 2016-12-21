@@ -17,6 +17,33 @@ body a:hover {
     color: black;
 }
 
+/*-------------Header------------------*/
+.navbar-default {
+    background: none;
+    border: none;
+}
+.path-frontpage #navbar a {
+    color: #fff;
+}
+
+.path-frontpage .dropdown-menu {
+    background-color: #323232;
+}
+
+.path-frontpage #block-vlas-main-menu-menu .dropdown-toggle .dropdown-menu a{
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.path-frontpage .dropdown-menu a:hover {
+    color: #fff;
+    background: none;
+}
+
+.path-frontpage #navbar a:focus{
+    background: none;
+}
+
+
 /*-----------------Buttons-------------*/
 .btn {
     color: #fff;
@@ -59,6 +86,46 @@ body a:hover {
 /*logo*/
 .logo img {
 	max-width: 40px;
+}
+
+/*------------------Account menu--------------------*/
+#block-vlas-account-menu {
+    display: inline-block;
+    float: left;
+}
+
+/*--------------search in the front-page ------------------*/
+#search-block-form {
+    display: inline-block;
+    width: 20%;
+    float: right;
+    margin: 9px;
+}
+
+#navbar .form-type-search button {
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: none;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+#navbar .form-type-search button:hover {
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: none;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+#navbar .form-type-search input {
+    border-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: none;
+    border-right: none;
 }
 
 .path-frontpage .main-container {
@@ -133,6 +200,8 @@ h2{
     background-size: cover;
     height: 100vh;
     width: 99vw;
+    background-color: grey;
+    background-blend-mode: multiply;
 }
 
 .path-frontpage .form--inline {
