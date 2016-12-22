@@ -58,7 +58,7 @@
 #}
 
 <div id="filters-background" class="filters-background">
-<div class="filters" class="filters">
+
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
@@ -86,8 +86,7 @@
           </button>
         {% endif %}
       </div>
-
-<div class="topbar">
+  <div class="topbar">
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
         <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -98,12 +97,13 @@
         </div>
       {% endif %}
     </header>
+  <div class="filters" class="filters">
 	<div class="header-topbar">
 		{{ page.header }}
 	</div>
   {% endblock %}
 {% endif %}
-	</div>
+  </div>
 </div>
 
 
