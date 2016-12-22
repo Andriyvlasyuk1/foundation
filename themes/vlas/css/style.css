@@ -357,6 +357,9 @@ h2{
     margin-left: 200px;
     margin-right: 200px;
 }
+.view-top-news-you-shouldn-t-miss .views-row {
+    display: inline-block;
+}
 
 .view-top-news-you-shouldn-t-miss img {
 	float: left;
@@ -601,6 +604,12 @@ footer #block-mainnavigation {
 
 .view-display-id-page_1 .views-field-body {
     display: block;
+}
+
+.view-display-id-page_1 .views-row {
+    display: inline-block;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
 }
 
 .path-blog .col-sm-9 {
