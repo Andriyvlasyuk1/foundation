@@ -359,11 +359,19 @@ h2{
 }
 .view-top-news-you-shouldn-t-miss .views-row {
     display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #f3f2f1;
+    padding-bottom: 20px;
 }
 
 .view-top-news-you-shouldn-t-miss img {
 	float: left;
     margin-right: 20px;
+}
+.view-top-news-you-shouldn-t-miss  .views-field-title a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #323232;
 }
 
 .view-top-news-you-shouldn-t-miss .views-field-view-node {
@@ -405,6 +413,9 @@ display: block;
     display: inline-block;
     float: left;
     margin-right: 20px;
+}
+.path-frontpage .view-most-recent-listings .views-col .views-field-title a{
+    color: #323232;
 }
 
 
@@ -485,7 +496,7 @@ padding: 20px;
 .footer {
 background-color: #383C3F;
 width: 100%;
-color: #fff;
+color: rgba(255,255,255,0.7);
 }
 
 .footer h2{
@@ -502,7 +513,11 @@ color: rgba(255, 255, 255, 0.7)
 }
 
 footer a:hover {
-color: #fff;
+    color: #fff;
+}
+
+footer .nav li a:hover {
+    background: none;
 }
 
 /*Companies block*/
@@ -618,6 +633,16 @@ footer #block-mainnavigation {
 
 .path-blog .col-sm-3 {
     width: 30%;
+}
+
+/*--------------------Page Article-----------------------*/
+.panel-1col .block-entity-fieldnodetitle span {
+    font-size: 28px;
+}
+
+.panel-1col .block-entity-fieldnodebody {
+    border: none;
+    font-size: 14px;
 }
 /*------------------- Page taxonomy term-----------------*/
 
