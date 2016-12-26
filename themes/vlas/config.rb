@@ -16,8 +16,8 @@ sourcemap = false
 # Location of the theme's resources.
 
 environment = :production
-css_dir = "style/css"
-sass_dir = "style/scss"
+css_dir = "css"
+sass_dir = "scss"
 images_dir = "images"
 generated_images_dir = images_dir + "/generated"
 javascripts_dir = "js"
