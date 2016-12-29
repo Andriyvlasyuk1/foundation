@@ -8660,10 +8660,6 @@ footer #block-mainnavigation {
   font-size: 28px;
 }
 
-.panel-1col .block-entity-fieldnodebody {
-  border: none;
-  font-size: 14px;
-}
 
 /*------------------- Page taxonomy term-----------------*/
 .path-taxonomy .region-content .views-row {
