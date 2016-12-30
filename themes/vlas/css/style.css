@@ -8766,6 +8766,7 @@ footer #block-mainnavigation {
   padding: 15px;
 }
 
+/*----------------------------------------------------768px--------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
   .path-frontpage .form--inline .form-item {
     float: none;
@@ -8840,6 +8841,7 @@ footer #block-mainnavigation {
     width: 50%;
   }
 }
+/*-----------------------------------------------------425px--------------------------------------------------------*/
 @media only screen and (max-width: 450px) {
   .filters h2 {
     font-size: 28px;
@@ -8886,6 +8888,35 @@ footer #block-mainnavigation {
 
   section#block-views-block-categories-block-3 {
     width: 100%;
+  }
+}
+/*-----------------------------------------------------1024px------------------------------------------------------*/
+@media only screen and (min-width: 780px) and (max-width: 1500px) {
+  #block-views-block-most-recent-listings-block-1 .views-col {
+    width: 44%;
+  }
+
+  .path-frontpage .block-views-blockmost-recent-listings-block-1 .views-field-field-main-image img {
+    width: 100%;
+  }
+
+  #block-views-block-locations-block-1 .views-col {
+    width: 44%;
+  }
+
+  #block-views-block-locations-block-1 .views-col img {
+    width: 100%;
+    height: 250px;
+  }
+
+  #block-views-block-features-block-1 .views-col {
+    width: 30%;
+  }
+
+  #block-views-block-features-block-1 .views-col {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
