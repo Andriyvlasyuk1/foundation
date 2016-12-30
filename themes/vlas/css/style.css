@@ -8148,6 +8148,7 @@ body a:hover {
   border-bottom-right-radius: 0px;
   background: none;
   border-right: none;
+  height: 33px;
 }
 
 .path-frontpage .main-container {
