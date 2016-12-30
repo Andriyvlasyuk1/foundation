@@ -8255,7 +8255,7 @@ h2 {
 }
 
 .path-frontpage .form--inline input {
-  height: 50px;
+  height: 52px;
   width: 100%;
 }
 
@@ -8335,6 +8335,7 @@ h2 {
 
 #block-views-block-locations-block-1 .views-col img {
   width: 280px;
+  height: 200px;
 }
 
 #block-views-block-locations-block-1 .views-field-name {
@@ -8392,6 +8393,11 @@ h2 {
   text-align: left;
   margin-left: 200px;
   margin-right: 200px;
+}
+
+.view-top-news-you-shouldn-t-miss .view-content {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .view-top-news-you-shouldn-t-miss .views-row {
@@ -8522,6 +8528,11 @@ h2 {
 }
 
 /*feature image*/
+#block-views-block-features-block-1 .view-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
 #block-views-block-features-block-1 .views-col {
   width: 25%;
 }
@@ -8761,6 +8772,10 @@ footer #block-mainnavigation {
     margin-bottom: 15px;
   }
 
+  #navbar #search-block-form {
+    display: none;
+  }
+
   .path-frontpage .form--inline button {
     width: auto;
   }
@@ -8783,6 +8798,7 @@ footer #block-mainnavigation {
 
   #block-views-block-locations-block-1 .views-col img {
     width: 100%;
+    height: 400px;
   }
 
   #block-views-block-features-block-1 .views-col {
@@ -8790,12 +8806,17 @@ footer #block-mainnavigation {
   }
 
   #block-views-block-categories-block-1 .views-col {
-    width: 40%;
+    width: 39%;
   }
 
   .view-top-news-you-shouldn-t-miss {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .companies {
+    display: inline-block;
+    padding: 0px;
   }
 
   #block-companies img {
@@ -8811,6 +8832,58 @@ footer #block-mainnavigation {
   section#block-aboutfoundation {
     margin: 0;
     float: none;
+    width: 100%;
+  }
+
+  section#block-views-block-categories-block-3 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .filters h2 {
+    font-size: 28px;
+    padding: 0 0 20px 0;
+  }
+
+  .path-frontpage .form--inline {
+    margin-top: 20px;
+  }
+
+  #navbar #search-block-form {
+    display: none;
+  }
+
+  #block-views-block-locations-block-1 .views-col img {
+    width: 100%;
+    height: 200px;
+  }
+
+  #block-views-block-features-block-1 .views-col {
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .view-top-news-you-shouldn-t-miss .views-row {
+    padding: 35px 35px 30px 35px;
+  }
+
+  #block-views-block-features-block-1 .view-content {
+    width: 100%;
+  }
+
+  .view-top-news-you-shouldn-t-miss .view-content {
+    width: 100%;
+  }
+
+  .companies {
+    margin-bottom: 0;
+  }
+
+  #block-companies img {
+    margin-bottom: 50px;
+  }
+
+  section#block-views-block-categories-block-3 {
     width: 100%;
   }
 }
