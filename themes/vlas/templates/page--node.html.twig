@@ -97,6 +97,9 @@
   {% endblock %}
 {% endif %}
 
+<div class="map">
+	{{ page.map }}
+</div>
 
 {# Main #}
 {% block main %}
@@ -111,10 +114,6 @@
           </div>
         {% endblock %}
       {% endif %}
-
-<div class="map">
-	{{ page.map }}
-</div>
 
       {# Sidebar First #}
       {% if page.sidebar_first %}

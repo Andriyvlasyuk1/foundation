@@ -8158,7 +8158,7 @@ body a:hover {
 
 /*----------------- Map -------------*/
 iframe {
-  width: 99vw;
+  width: 98.4vw;
   height: 300px;
 }
 
@@ -8478,13 +8478,13 @@ h2 {
 }
 
 .view-id-media .slick__arrow {
-  margin-top: 210px;
+  margin-top: 205px;
 }
 
 .view-id-media .slick__arrow .slick-prev {
   display: block;
   position: absolute;
-  left: 90%;
+  left: 91%;
 }
 
 .slick img {
@@ -9020,6 +9020,14 @@ footer #block-mainnavigation .dropdown-menu a {
 
   footer #block-mainnavigation {
     margin: 0;
+  }
+
+  /*-----------------------Node--------------------*/
+  .path-node .view-id-media .slick__arrow {
+    margin-top: 190px;
+  }
+  .path-node .view-id-media .slick__arrow .slick-prev {
+    left: 90%;
   }
 }
 @media only screen and (min-width: 1870px) {
