@@ -8158,7 +8158,7 @@ body a:hover {
 
 /*----------------- Map -------------*/
 iframe {
-  width: 1200px;
+  width: 99vw;
   height: 300px;
 }
 
@@ -8454,14 +8454,14 @@ h2 {
   margin-right: 30px;
   /*padding: 16px 16px 10px 16px;*/
   position: relative;
-  width: 15%;
+  width: 20%;
   padding: 5px;
 }
 
 .path-node .view-most-recent-listings .views-col img {
   display: inline-block;
   float: left;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .path-frontpage .view-most-recent-listings .views-col .views-field-title a {
@@ -8855,9 +8855,27 @@ footer #block-mainnavigation .dropdown-menu a {
   section#block-views-block-categories-block-3 {
     width: 50%;
   }
+
+  /*----------------------Node-------------------------*/
+  .path-node .slick-list {
+    height: 280px;
+  }
+  .path-node .slick-list .slick-track {
+    height: 280px;
+  }
+  .path-node .view-id-media .slick__arrow {
+    margin-top: 120px;
+  }
+  .path-node .view-id-media .slick__arrow .slick-prev {
+    left: 87%;
+  }
+  .path-node .block-views-blockmost-recent-listings-block-2 .views-col {
+    width: 30%;
+  }
 }
 /*-----------------------------------------------------425px--------------------------------------------------------*/
 @media only screen and (max-width: 450px) {
+  /*---------------Front-page------------*/
   .filters h2 {
     font-size: 28px;
     padding: 0 0 20px 0;
@@ -8871,6 +8889,7 @@ footer #block-mainnavigation .dropdown-menu a {
     display: none;
   }
 
+  /*Диви як тут------------------------------------------*/
   #block-views-block-locations-block-1 .views-col img {
     width: 100%;
     height: 200px;
@@ -8904,6 +8923,51 @@ footer #block-mainnavigation .dropdown-menu a {
   section#block-views-block-categories-block-3 {
     width: 100%;
   }
+
+  /*------------------Node--------------------*/
+  .path-node .col-sm-9 {
+    width: 100%;
+  }
+  .path-node .col-sm-3 {
+    width: 100%;
+  }
+  .path-node .block-entity-fieldnodefield-content-logo {
+    width: 100%;
+  }
+  .path-node .block-entity-fieldnodefield-content-logo img {
+    width: 100%;
+  }
+  .path-node .view-id-media .slick__arrow {
+    margin-top: 70px;
+  }
+  .path-node .view-id-media .slick__arrow .slick-prev {
+    left: 77%;
+  }
+  .path-node .slick-list {
+    height: 170px;
+  }
+  .path-node .slick-list .slick-track {
+    height: 170px;
+  }
+  .path-node .block-views-blockmost-recent-listings-block-2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .path-node .block-views-blockmost-recent-listings-block-2 .views-col {
+    width: 100%;
+  }
+  .path-node .block-entity-fieldnodefield-address {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .path-node .block-entity-fieldnodefield-opening-hours {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .path-node .block-entity-fieldnodefield-comment {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 /*-----------------------------------------------------1024px------------------------------------------------------*/
 @media only screen and (min-width: 780px) and (max-width: 1500px) {
@@ -8936,7 +9000,7 @@ footer #block-mainnavigation .dropdown-menu a {
   }
 
   #block-views-block-features-block-1 .views-col {
-    width: 30%;
+    width: 29%;
   }
 
   #block-views-block-features-block-1 .views-col {
