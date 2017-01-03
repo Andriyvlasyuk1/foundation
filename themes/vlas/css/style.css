@@ -8077,7 +8077,7 @@ body a:hover {
 
 /*Filters button*/
 .filters .form-actions .btn, .form-actions .btn-group {
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 /*--------Preview-----------*/
@@ -8272,7 +8272,7 @@ h2 {
 .path-frontpage .form--inline .form-item {
   float: left;
   width: 30%;
-  margin: 1%;
+  margin: 1.5%;
 }
 
 .form--inline {
@@ -8355,10 +8355,11 @@ h2 {
 /*Categories on front page*/
 #block-views-block-categories-block-1 {
   display: inline-block;
+  width: 100%;
 }
 
 .path-frontpage .view-id-categories {
-  width: 100%;
+  width: 90%;
   display: inline-block;
 }
 
@@ -8369,12 +8370,16 @@ h2 {
   margin-left: 15px;
   /*padding: 16px 16px 10px 16px;*/
   position: relative;
-  width: 15%;
+  width: 17.6%;
 }
 
 #block-views-block-categories-block-1 .views-col:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
   top: -2px;
+}
+
+#block-views-block-features-block-1 {
+  width: 90%;
 }
 
 #block-views-block-features-block-1 .views-col {
@@ -8640,6 +8645,16 @@ footer #block-mainnavigation {
   margin-top: 30px;
   clear: both;
 }
+footer #block-mainnavigation a:focus {
+  background: none;
+}
+footer #block-mainnavigation .dropdown-menu {
+  bottom: 100%;
+  top: inherit;
+}
+footer #block-mainnavigation .dropdown-menu a {
+  color: #fff;
+}
 
 /*---------------Page listings-----------------*/
 /*views fields*/
@@ -8808,7 +8823,7 @@ footer #block-mainnavigation {
   }
 
   #block-views-block-categories-block-1 .views-col {
-    width: 39%;
+    width: 38%;
   }
 
   .view-top-news-you-shouldn-t-miss {
@@ -8892,6 +8907,10 @@ footer #block-mainnavigation {
 }
 /*-----------------------------------------------------1024px------------------------------------------------------*/
 @media only screen and (min-width: 780px) and (max-width: 1500px) {
+  .filters .form-actions .btn, .form-actions .btn-group {
+    min-width: 120px;
+  }
+
   #block-views-block-most-recent-listings-block-1 .views-col {
     width: 44%;
   }
@@ -8909,6 +8928,13 @@ footer #block-mainnavigation {
     height: 250px;
   }
 
+  #block-views-block-categories-block-1 {
+    width: 100%;
+  }
+  #block-views-block-categories-block-1 .views-col {
+    width: 16.6%;
+  }
+
   #block-views-block-features-block-1 .views-col {
     width: 30%;
   }
@@ -8917,6 +8943,29 @@ footer #block-mainnavigation {
     margin-bottom: 15px;
     margin-right: 15px;
     margin-left: 15px;
+  }
+
+  .view-top-news-you-shouldn-t-miss {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section#block-aboutfoundation {
+    margin: 0 100px 0 20px;
+  }
+
+  footer #block-mainnavigation {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1870px) {
+  #block-views-block-categories-block-1 {
+    width: 75%;
+  }
+
+  #block-views-block-features-block-1 {
+    text-align: left;
+    width: 67%;
   }
 }
 
