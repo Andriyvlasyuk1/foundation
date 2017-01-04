@@ -212,6 +212,7 @@ h2 {
   font-size: 13px;
   /*margin: 0 0 30px 0; */
   padding: 8px 25px;
+  margin-top: 20px;
 }
 
 /*-----------------search in node page---------------------*/
@@ -403,34 +404,48 @@ h2 {
   text-align: left;
   margin-left: 200px;
   margin-right: 200px;
-}
 
-.view-top-news-you-shouldn-t-miss .view-content{
-  width: 80%;
-  margin: 0 auto;
-}
 
-.view-top-news-you-shouldn-t-miss .views-row {
-  display: inline-block;
-  margin-bottom: 20px;
-  border-bottom: solid 1px #f3f2f1;
-  padding-bottom: 20px;
-}
+  .view-content{
+    width: 80%;
+    margin: 0 auto;
+  }
 
-.view-top-news-you-shouldn-t-miss img {
-  float: left;
-  margin-right: 20px;
-}
+   .views-row {
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #f3f2f1;
+    padding-bottom: 20px;
+  }
 
-.view-top-news-you-shouldn-t-miss .views-field-title a {
-  font-size: 18px;
-  font-weight: bold;
-  color: #323232;
-}
+  img {
+    float: left;
+    margin-right: 20px;
+  }
 
-.view-top-news-you-shouldn-t-miss .views-field-view-node {
-  margin-top: 30px;
-  float: right;
+  .views-field-title {
+    a {
+      font-size: 18px;
+      font-weight: bold;
+      color: #323232;
+    }
+  }
+
+  .views-field-view-node {
+    margin-top: 30px;
+    float: right;
+  }
+
+  span {
+    a:after{
+      color: #3CC47E;
+      content: ">";
+      font-family: 'FontAwesome';
+      font-size: 15px;
+      font-weight: bold;
+      margin-left:5px;
+    }
+  }
 }
 
 #block-views-block-top-news-you-shouldn-t-miss-block-1 .views-field-body {
@@ -479,10 +494,10 @@ h2 {
 
 /*-----------------------Slider----------------------*/
 .slick-list {
-  height: 480px;
+  height: 450px;
 
   .slick-track {
-    height: 480px;
+    height: 450px;
   }
 
 }
@@ -646,13 +661,38 @@ section#block-views-block-locations-block-3 {
   float: left;
   margin-right: 100px;
   width: 20%;
+
+  a:before {
+    color: #3CC47E;
+    content: ">";
+    font-family: 'FontAwesome';
+    font-size: 15px;
+    margin-right:5px;
+    font-weight: bold;
+  }
+
+  a:hover {
+    margin-left: 5px;
+  }
 }
 
 /*Categories block in footer*/
 section#block-views-block-categories-block-3 {
-  float: left;
-  width: 20%;
-}
+    float: left;
+    width: 20%;
+
+    a:before {
+      color: #3CC47E;
+      content: ">";
+      font-family: 'FontAwesome';
+      font-size: 15px;
+      margin-right:5px;
+    }
+
+    a:hover {
+      margin-left: 5px;
+    }
+  }
 
 /*main navigation in footer*/
 footer #block-mainnavigation {
@@ -794,326 +834,366 @@ footer #block-mainnavigation {
   width: 30%;
 }
 
+.field--name-field-content-logo{
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  img {
+    margin: 5px;
+  }
+}
+
 /*--borders of sidebars--*/
-.path-node .col-sm-3 section {
-  border: solid 1px #f3f2f1;
-  margin-top: 20px;
-  padding: 15px;
-}
-
-/*----------------------------------------------------768px--------------------------------------------------------*/
-
-@media only screen and (max-width: 768px) {
-
-  .path-frontpage .form--inline .form-item {
-    float: none;
-    width: auto;
-    margin-bottom: 15px;
-  }
-
-  #navbar #search-block-form {
-    display: none;
-  }
-
-  .path-frontpage .form--inline button {
-    width: auto;
-  }
-
-  #block-views-block-most-recent-listings-block-1 .views-col{
-    width: 100%;
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-
-  .path-frontpage .block-views-blockmost-recent-listings-block-1 .views-field-field-main-image img {
-    width: 100%;
-  }
-
-  .path-frontpage #block-views-block-locations-block-1 .views-col{
-    width: 100%;
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-
-  #block-views-block-locations-block-1 .views-col img{
-    width: 100%;
-    height: 400px;
-  }
-
-  #block-views-block-features-block-1 .views-col {
-    width: 90%;
-  }
-
-  #block-views-block-categories-block-1 .views-col{
-    width: 38%;
-  }
-
-  .view-top-news-you-shouldn-t-miss {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .companies {
-    display: inline-block;
-    padding: 0px;
-  }
-
-  #block-companies img{
-    margin: 10px;
-  }
-
-  /*footer menu*/
-  footer #block-mainnavigation{
-    margin-left: 0;
-  }
-
-  /*About foundation block*/
-  section#block-aboutfoundation {
-    margin: 0;
-    float: none;
-    width: 100%;
-  }
-
-  section#block-views-block-categories-block-3 {
-    width: 50%;
-  }
-
-  /*----------------------Node-------------------------*/
-  .path-node {
-    .slick-list {
-      height: 280px;
-
-      .slick-track {
-        height: 280px;
-      }
-    }
-
-    .view-id-media .slick__arrow {
-      margin-top: 120px;
-
-      .slick-prev{
-        left: 87%;
-      }
-    }
-
-    .block-views-blockmost-recent-listings-block-2{
-      //width: 90%;
-      //margin: 0 auto;
-
-      .views-col {
-        width: 30%;
-      }
-
-    }
-  }
-
-}
-
-/*-----------------------------------------------------425px--------------------------------------------------------*/
-
-@media only screen and (max-width: 450px) {
-
-  /*---------------Front-page------------*/
-
-  .filters h2 {
-    font-size: 28px;
-    padding: 0 0 20px 0
-  }
-
-  .path-frontpage {
-
-    .form--inline {
+.path-node {
+  .col-sm-3 {
+    section {
+      border: solid 1px #f3f2f1;
       margin-top: 20px;
+      padding: 15px;
+
+      tr{
+        background-color: #fff;
+      }
     }
 
+    .views-field-name {
+      a:after {
+        color: #3CC47E;
+        content: ">";
+        font-family: 'FontAwesome';
+        font-size: 15px;
+        position: absolute;
+        right: 20px;
+        font-weight: bold;
+      }
+    }
   }
+}
 
-  #navbar #search-block-form {
-    display: none;
-  }
-/*Диви як тут------------------------------------------*/
-  #block-views-block-locations-block-1 .views-col img{
-    width: 100%;
-    height: 200px;
-  }
 
-  #block-views-block-features-block-1 .views-col{
-    margin-bottom: 20px;
-    margin-left: 20px;
-  }
+  /*----------------------------------------------------768px--------------------------------------------------------*/
 
-  .view-top-news-you-shouldn-t-miss .views-row{
-    padding: 35px 35px 30px 35px;
-  }
+  @media only screen and (max-width: 768px) {
 
-  #block-views-block-features-block-1 .view-content {
-    width: 100%;
-  }
+    .path-frontpage .form--inline .form-item {
+      float: none;
+      width: auto;
+      margin-bottom: 15px;
+    }
 
-  .view-top-news-you-shouldn-t-miss .view-content {
-    width: 100%;
-  }
+    #navbar #search-block-form {
+      display: none;
+    }
 
-  .companies {
-    margin-bottom: 0;
-  }
+    .path-frontpage .form--inline button {
+      width: auto;
+    }
 
-  #block-companies img{
-    margin-bottom: 50px;
-  }
+    #block-views-block-most-recent-listings-block-1 .views-col{
+      width: 100%;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
 
-  section#block-views-block-categories-block-3 {
-    width: 100%;
-  }
-
-  /*------------------Node--------------------*/
-
-  .path-node {
-
-    .col-sm-9 {
+    .path-frontpage .block-views-blockmost-recent-listings-block-1 .views-field-field-main-image img {
       width: 100%;
     }
 
-    .col-sm-3{
-      width:100%;
+    .path-frontpage #block-views-block-locations-block-1 .views-col{
+      width: 100%;
+      margin-left: 6px;
+      margin-right: 6px;
     }
 
-    .block-entity-fieldnodefield-content-logo{
+    #block-views-block-locations-block-1 .views-col img{
       width: 100%;
+      height: 400px;
+    }
 
-      img {
+    #block-views-block-features-block-1 .views-col {
+      width: 90%;
+    }
+
+    #block-views-block-categories-block-1 .views-col{
+      width: 38%;
+    }
+
+    .view-top-news-you-shouldn-t-miss {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .companies {
+      display: inline-block;
+      padding: 0px;
+    }
+
+    #block-companies img{
+      margin: 10px;
+    }
+
+    /*footer menu*/
+    footer #block-mainnavigation{
+      margin-left: 0;
+    }
+
+    /*About foundation block*/
+    section#block-aboutfoundation {
+      margin: 0;
+      float: none;
+      width: 100%;
+    }
+
+    section#block-views-block-categories-block-3 {
+      width: 50%;
+    }
+
+    /*----------------------Node-------------------------*/
+    .path-node {
+      .slick-list {
+        height: 280px;
+
+        .slick-track {
+          height: 280px;
+        }
+      }
+
+      .view-id-media .slick__arrow {
+        margin-top: 120px;
+
+        .slick-prev{
+          left: 87%;
+        }
+      }
+
+      .block-views-blockmost-recent-listings-block-2{
+        //width: 90%;
+        //margin: 0 auto;
+
+        .views-col {
+          width: 30%;
+        }
+
+      }
+    }
+
+  }
+
+  /*-----------------------------------------------------425px--------------------------------------------------------*/
+
+  @media only screen and (max-width: 450px) {
+
+    /*---------------Front-page------------*/
+
+    .filters h2 {
+      font-size: 28px;
+      padding: 0 0 20px 0
+    }
+
+    .path-frontpage {
+
+      .form--inline {
+        margin-top: 20px;
+      }
+
+    }
+
+    #navbar #search-block-form {
+      display: none;
+    }
+    /*Диви як тут------------------------------------------*/
+    #block-views-block-locations-block-1 .views-col img{
+      width: 100%;
+      height: 200px;
+    }
+
+    #block-views-block-features-block-1 .views-col{
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+
+    .view-top-news-you-shouldn-t-miss .views-row{
+      padding: 35px 35px 30px 35px;
+    }
+
+    #block-views-block-features-block-1 .view-content {
+      width: 100%;
+    }
+
+    .view-top-news-you-shouldn-t-miss .view-content {
+      width: 100%;
+    }
+
+    .companies {
+      margin-bottom: 0;
+    }
+
+    #block-companies img{
+      margin-bottom: 50px;
+    }
+
+    section#block-views-block-categories-block-3 {
+      width: 100%;
+    }
+
+    /*------------------Node--------------------*/
+
+    .path-node {
+
+      .col-sm-9 {
         width: 100%;
       }
-    }
 
-    .view-id-media .slick__arrow {
-      margin-top: 70px;
-
-      .slick-prev{
-        left: 77%;
-      }
-    }
-
-    .slick-list {
-      height: 170px;
-
-      .slick-track {
-        height: 170px;
-      }
-
-    }
-
-    .block-views-blockmost-recent-listings-block-2{
-      width: 90%;
-      margin: 0 auto;
-
-      .views-col {
+      .col-sm-3{
         width:100%;
       }
 
-    }
+      .block-entity-fieldnodefield-content-logo{
+        width: 100%;
 
-    .block-entity-fieldnodefield-address{
-      width:90%;
-      margin: 0 auto;
-    }
+        img {
+          width: 100%;
+        }
+      }
 
-    .block-entity-fieldnodefield-opening-hours{
-      width:90%;
-      margin: 0 auto;
-    }
+      .view-id-media .slick__arrow {
+        margin-top: 70px;
 
-    .block-entity-fieldnodefield-comment {
-      width:90%;
-      margin: 0 auto;
-    }
+        .slick-prev{
+          left: 77%;
+        }
+      }
 
-  }
-}
+      .slick-list {
+        height: 170px;
 
+        .slick-track {
+          height: 170px;
+        }
 
+      }
 
-/*-----------------------------------------------------1024px------------------------------------------------------*/
+      .block-views-blockmost-recent-listings-block-2{
+        width: 90%;
+        margin: 0 auto;
 
+        .views-col {
+          width:100%;
+        }
 
-@media only screen and (min-width: 780px) and (max-width: 1500px){
+      }
 
-  .filters .form-actions .btn, .form-actions .btn-group {
-    min-width: 120px;
-  }
+      .block-entity-fieldnodefield-address{
+        width:90%;
+        margin: 0 auto;
+      }
 
-  #block-views-block-most-recent-listings-block-1 .views-col{
-    width: 44%;
-  }
+      .block-entity-fieldnodefield-opening-hours{
+        width:90%;
+        margin: 0 auto;
+      }
 
-  .path-frontpage .block-views-blockmost-recent-listings-block-1 .views-field-field-main-image img {
-    width: 100%;
-  }
+      .block-entity-fieldnodefield-comment {
+        width:90%;
+        margin: 0 auto;
+      }
 
-  #block-views-block-locations-block-1 .views-col{
-    width: 44%;
-  }
-
-  #block-views-block-locations-block-1 .views-col img{
-    width: 100%;
-    height: 250px;
-  }
-
-  #block-views-block-categories-block-1 {
-    width: 100%;
-
-    .views-col {
-      width: 16.6%;
     }
   }
 
 
 
-  #block-views-block-features-block-1 .views-col {
-    width: 29%;
-  }
+  /*-----------------------------------------------------1024px------------------------------------------------------*/
 
-  #block-views-block-features-block-1 .views-col {
-    margin-bottom: 15px;
-    margin-right: 15px;
-    margin-left: 15px;
-  }
 
-  .view-top-news-you-shouldn-t-miss {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  @media only screen and (min-width: 780px) and (max-width: 1500px){
 
-  section#block-aboutfoundation {
-    margin: 0 100px 0 20px;
-  }
+    .filters .form-actions .btn, .form-actions .btn-group {
+      min-width: 120px;
+    }
 
-  footer #block-mainnavigation {
-    margin: 0;
-  }
+    #block-views-block-most-recent-listings-block-1 .views-col{
+      width: 44%;
+    }
 
-  /*-----------------------Node--------------------*/
-  .path-node {
-    .view-id-media .slick__arrow {
-      margin-top: 190px;
+    .path-frontpage .block-views-blockmost-recent-listings-block-1 .views-field-field-main-image img {
+      width: 100%;
+    }
 
-      .slick-prev {
-        left: 90%;
+    #block-views-block-locations-block-1 .views-col{
+      width: 44%;
+    }
+
+    #block-views-block-locations-block-1 .views-col img{
+      width: 100%;
+      height: 250px;
+    }
+
+    #block-views-block-categories-block-1 {
+      width: 100%;
+
+      .views-col {
+        width: 16.6%;
       }
     }
 
-  }
-}
 
-@media only screen and (min-width: 1870px) {
-  #block-views-block-categories-block-1 {
-    width: 75%;
+
+    #block-views-block-features-block-1 .views-col {
+      width: 29%;
+    }
+
+    #block-views-block-features-block-1 .views-col {
+      margin-bottom: 15px;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+
+    .view-top-news-you-shouldn-t-miss {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    section#block-aboutfoundation {
+      margin: 0 100px 0 20px;
+    }
+
+    footer #block-mainnavigation {
+      margin: 0;
+    }
+
+    /*-----------------------Node--------------------*/
+    .path-node {
+      .view-id-media .slick__arrow {
+        margin-top: 170px;
+
+        .slick-prev {
+          left: 90%;
+        }
+      }
+
+      .slick-list {
+        height: 370px;
+
+        .slick-track {
+          height: 370px;
+        }
+
+      }
+
+    }
   }
 
-  #block-views-block-features-block-1 {
-    text-align: left;
-    width: 67%;
+  @media only screen and (min-width: 1870px) {
+    #block-views-block-categories-block-1 {
+      width: 75%;
+    }
+
+    #block-views-block-features-block-1 {
+      text-align: left;
+      width: 67%;
+    }
   }
-}
+
 
 
