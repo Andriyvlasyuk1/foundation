@@ -160,7 +160,7 @@ body a:hover {
 
 /*----------------- Map -------------*/
 iframe {
-  width: 98.4vw;
+  width: 97vw;
   height: 300px;
 }
 
@@ -248,7 +248,6 @@ h2 {
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  width: 99vw;
   background-color: grey;
   background-blend-mode: multiply;
 }
@@ -297,9 +296,9 @@ h2 {
 
 #block-views-block-most-recent-listings-block-1 .views-col {
   border: 1px solid #f3f2f1;
-  margin-right: 25px;
+  margin-right: 0.65em;
   margin-bottom: 25px;
-  margin-left: 25px;
+  margin-left: 0.65em;
   /*padding: 16px 16px 10px 16px;*/
   position: relative;
 }
@@ -333,8 +332,8 @@ h2 {
 /*Listings Everywhere*/
 #block-views-block-locations-block-1 .views-col {
   margin-bottom: 25px;
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-right: 0.65em;
+  margin-left: 0.65em;
   position: relative;
 }
 
@@ -358,45 +357,58 @@ h2 {
 
 /*Categories on front page*/
 
-#block-views-block-categories-block-1 {
-  display: inline-block;
-  width: 100%;
-}
-
 .path-frontpage .view-id-categories{
   width: 90%;
   display: inline-block;
 }
 
-#block-views-block-categories-block-1 .views-col {
-  border: 1px solid #f3f2f1;
-  margin-bottom: 30px;
-  margin-right: 15px;
-  margin-left: 15px;
-  /*padding: 16px 16px 10px 16px;*/
-  position: relative;
-  width: 17.6%;
+#block-views-block-categories-block-1 {
+  display: inline-block;
+  width: 100%;
+
+  img{
+    opacity: .7;
+  }
+
+  .views-field-name {
+    margin-top: 10px;
+
+    a {
+      color: #323232;
+    }
+  }
+
+  .views-col {
+    border: 1px solid #f3f2f1;
+    margin-bottom: 30px;
+    margin-right: 0.75em;
+    margin-left: 0.75em;
+    /*padding: 16px 16px 10px 16px;*/
+    position: relative;
+    width: 17.6%;
+  }
+
+  .views-col:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    top: -2px;
+  }
 }
 
-#block-views-block-categories-block-1 .views-col:hover {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
-  top: -2px;
-}
-
-#block-views-block-features-block-1{
+/*Features on frontpage*/
+#block-views-block-features-block-1 {
   width: 90%;
-}
 
-#block-views-block-features-block-1 .views-col {
-  margin-bottom: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-  position: relative;
-}
+  .views-col {
+      margin-bottom: 50px;
+      margin-right: 1.2em;
+      margin-left: 1.2em;
+      position: relative;
+  }
 
-#block-views-block-features-block-1 .views-field-field-feature-category {
-  font-weight: bold;
-  color: #4CC888;
+  .views-field-field-feature-category {
+    font-weight: bold;
+    color: #4CC888;
+  }
 }
 
 /*-----------------------------You shouldn't miss---------------------------------------------------------*/
@@ -468,19 +480,31 @@ h2 {
 }
 
 /*Amenities in Most resent listings in all nodes*/
-.path-node .view-most-recent-listings .views-col {
-  margin-bottom: 30px;
-  margin-right: 30px;
-  /*padding: 16px 16px 10px 16px;*/
-  position: relative;
-  width: 20%;
-  padding: 5px;
-}
+.path-node{
+  .view-most-recent-listings {
+    .views-col {
+      margin-bottom: 30px;
+      margin-right: 30px;
+      /*padding: 16px 16px 10px 16px;*/
+      position: relative;
+      width: 20%;
+      padding: 5px;
 
-.path-node .view-most-recent-listings .views-col img {
-  display: inline-block;
-  float: left;
-  margin-right: 10px;
+      img {
+        display: inline-block;
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .block-views-blockmost-recent-listings-block-2{
+
+    img{
+      opacity: .5;
+    }
+
+  }
 }
 
 .path-frontpage .view-most-recent-listings .views-col .views-field-title a {
@@ -491,6 +515,19 @@ h2 {
   text-align: left;
 
 }
+
+/*--------logo in node*/
+.path-node {
+
+  .block-entity-fieldnodefield-content-logo {
+    width:15%;
+
+    img {
+        width: 90%;
+    }
+  }
+}
+
 
 /*-----------------------Slider----------------------*/
 .slick-list {
@@ -570,7 +607,7 @@ h2 {
 }
 
 #block-views-block-features-block-1 .views-col {
-  width: 25%;
+  width: 30%;
 }
 
 #block-views-block-features-block-1 {
@@ -660,7 +697,7 @@ section#block-aboutfoundation {
 section#block-views-block-locations-block-3 {
   float: left;
   margin-right: 100px;
-  width: 20%;
+  width: 15%;
 
   a:before {
     color: #3CC47E;
@@ -704,6 +741,7 @@ footer #block-mainnavigation {
   a:focus {
     background: none;
   }
+
 
   .dropdown-menu {
     bottom: 100%;
@@ -749,6 +787,7 @@ footer #block-mainnavigation {
   float: left;
   margin-right: 20px;
 }
+
 
 /*------------------- Page Blog -------------------------*/
 .view-display-id-page_1 .views-field-field-image img {
@@ -851,8 +890,33 @@ footer #block-mainnavigation {
       margin-top: 20px;
       padding: 15px;
 
+      td {
+        vertical-align: middle;
+      }
+
       tr{
         background-color: #fff;
+      }
+
+      h2 {
+        padding: 0 0 10px 0;
+      }
+    }
+
+    .block-views-blockcategories-block-2 {
+      img {
+        opacity: .5;
+      }
+
+      a{
+        color: #666;
+        line-height: 32px;
+      }
+    }
+
+    .block-views-blocklocations-block-2{
+      a{
+        color: #666;
       }
     }
 
@@ -944,12 +1008,33 @@ footer #block-mainnavigation {
       width: 100%;
     }
 
+    section#block-views-block-locations-block-3 {
+      width: 15%;
+    }
+
     section#block-views-block-categories-block-3 {
       width: 50%;
     }
 
     /*----------------------Node-------------------------*/
     .path-node {
+
+      .col-sm-9 {
+        width: 100%;
+      }
+
+      .col-sm-3{
+        width:100%;
+      }
+
+      .block-entity-fieldnodefield-content-logo{
+        width: 100%;
+
+        img {
+          width: 97%;
+        }
+      }
+
       .slick-list {
         height: 280px;
 
@@ -982,84 +1067,12 @@ footer #block-mainnavigation {
   /*-----------------------------------------------------425px--------------------------------------------------------*/
 
   @media only screen and (max-width: 450px) {
-
-    /*---------------Front-page------------*/
-
-    .filters h2 {
-      font-size: 28px;
-      padding: 0 0 20px 0
-    }
-
-    .path-frontpage {
-
-      .form--inline {
-        margin-top: 20px;
-      }
-
-    }
-
-    #navbar #search-block-form {
-      display: none;
-    }
-    /*Диви як тут------------------------------------------*/
-    #block-views-block-locations-block-1 .views-col img{
-      width: 100%;
-      height: 200px;
-    }
-
-    #block-views-block-features-block-1 .views-col{
-      margin-bottom: 20px;
-      margin-left: 20px;
-    }
-
-    .view-top-news-you-shouldn-t-miss .views-row{
-      padding: 35px 35px 30px 35px;
-    }
-
-    #block-views-block-features-block-1 .view-content {
-      width: 100%;
-    }
-
-    .view-top-news-you-shouldn-t-miss .view-content {
-      width: 100%;
-    }
-
-    .companies {
-      margin-bottom: 0;
-    }
-
-    #block-companies img{
-      margin-bottom: 50px;
-    }
-
-    section#block-views-block-categories-block-3 {
-      width: 100%;
-    }
-
-    /*------------------Node--------------------*/
-
     .path-node {
-
-      .col-sm-9 {
-        width: 100%;
-      }
-
-      .col-sm-3{
-        width:100%;
-      }
-
-      .block-entity-fieldnodefield-content-logo{
-        width: 100%;
-
-        img {
-          width: 100%;
-        }
-      }
 
       .view-id-media .slick__arrow {
         margin-top: 70px;
 
-        .slick-prev{
+        .slick-prev {
           left: 77%;
         }
       }
@@ -1072,32 +1085,6 @@ footer #block-mainnavigation {
         }
 
       }
-
-      .block-views-blockmost-recent-listings-block-2{
-        width: 90%;
-        margin: 0 auto;
-
-        .views-col {
-          width:100%;
-        }
-
-      }
-
-      .block-entity-fieldnodefield-address{
-        width:90%;
-        margin: 0 auto;
-      }
-
-      .block-entity-fieldnodefield-opening-hours{
-        width:90%;
-        margin: 0 auto;
-      }
-
-      .block-entity-fieldnodefield-comment {
-        width:90%;
-        margin: 0 auto;
-      }
-
     }
   }
 
@@ -1105,15 +1092,14 @@ footer #block-mainnavigation {
 
   /*-----------------------------------------------------1024px------------------------------------------------------*/
 
-
-  @media only screen and (min-width: 780px) and (max-width: 1500px){
+  @media only screen and (min-width: 769px) and (max-width: 1250px){
 
     .filters .form-actions .btn, .form-actions .btn-group {
       min-width: 120px;
     }
 
     #block-views-block-most-recent-listings-block-1 .views-col{
-      width: 44%;
+      width: 46%;
     }
 
     .path-frontpage .block-views-blockmost-recent-listings-block-1 .views-field-field-main-image img {
@@ -1121,7 +1107,7 @@ footer #block-mainnavigation {
     }
 
     #block-views-block-locations-block-1 .views-col{
-      width: 44%;
+      width: 47%;
     }
 
     #block-views-block-locations-block-1 .views-col img{
@@ -1140,13 +1126,13 @@ footer #block-mainnavigation {
 
 
     #block-views-block-features-block-1 .views-col {
-      width: 29%;
+      width: 30%;
     }
 
     #block-views-block-features-block-1 .views-col {
       margin-bottom: 15px;
-      margin-right: 15px;
-      margin-left: 15px;
+      margin-right: 0.75em;
+      margin-left: 0.75em;
     }
 
     .view-top-news-you-shouldn-t-miss {
