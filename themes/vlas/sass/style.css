@@ -6401,10 +6401,6 @@ body a:hover {
   background-color: #38B976;
   border-color: #38B976; }
 
-/*Filters button*/
-.filters .form-actions .btn, .form-actions .btn-group {
-  margin-right: 3%; }
-
 /*--------Preview-----------*/
 #edit-preview {
   color: rgba(50, 50, 50, 0.5);
@@ -6566,9 +6562,9 @@ h2 {
   width: 10%; }
 
 .path-frontpage .form--inline .form-item {
-  float: left;
   width: 30%;
-  margin: 1.5%; }
+  margin: 0.5em;
+  display: inline-flex; }
 
 .form--inline {
   text-align: center; }
@@ -6697,11 +6693,13 @@ h2 {
     float: right; }
   .view-top-news-you-shouldn-t-miss span a:after {
     color: #3CC47E;
-    content: ">";
+    content: "\f054";
     font-family: 'FontAwesome';
-    font-size: 15px;
+    font-size: 9px;
     font-weight: bold;
     margin-left: 5px; }
+  .view-top-news-you-shouldn-t-miss span a:hover {
+    color: #3CC47E; }
 
 #block-views-block-top-news-you-shouldn-t-miss-block-1 .views-field-body {
   display: block; }
@@ -6865,9 +6863,6 @@ footer .nav li a:hover {
 #block-aboutfoundation {
   margin-left: 150px; }
 
-#block-companies {
-  display: inline-block; }
-
 /*About foundation in block footer*/
 section#block-aboutfoundation {
   width: 33%;
@@ -6881,9 +6876,9 @@ section#block-views-block-locations-block-3 {
   width: 15%; }
   section#block-views-block-locations-block-3 a:before {
     color: #3CC47E;
-    content: ">";
+    content: "\f054";
     font-family: 'FontAwesome';
-    font-size: 15px;
+    font-size: 9px;
     margin-right: 5px;
     font-weight: bold; }
   section#block-views-block-locations-block-3 a:hover {
@@ -6895,9 +6890,9 @@ section#block-views-block-categories-block-3 {
   width: 20%; }
   section#block-views-block-categories-block-3 a:before {
     color: #3CC47E;
-    content: ">";
+    content: "\f054";
     font-family: 'FontAwesome';
-    font-size: 15px;
+    font-size: 9px;
     margin-right: 5px; }
   section#block-views-block-categories-block-3 a:hover {
     margin-left: 5px; }
@@ -7035,9 +7030,9 @@ footer #block-mainnavigation {
   color: #666; }
 .path-node .col-sm-3 .views-field-name a:after {
   color: #3CC47E;
-  content: ">";
+  content: "\f054";
   font-family: 'FontAwesome';
-  font-size: 15px;
+  font-size: 9px;
   position: absolute;
   right: 20px;
   font-weight: bold; }
@@ -7046,7 +7041,7 @@ footer #block-mainnavigation {
 @media only screen and (max-width: 768px) {
   .path-frontpage .form--inline .form-item {
     float: none;
-    width: auto;
+    width: 90%;
     margin-bottom: 15px; }
 
   #navbar #search-block-form {
@@ -7076,7 +7071,10 @@ footer #block-mainnavigation {
     width: 90%; }
 
   #block-views-block-categories-block-1 .views-col {
-    width: 38%; }
+    width: 47%;
+    margin-bottom: 15px;
+    margin-right: 0.25em;
+    margin-left: 0.25em; }
 
   .view-top-news-you-shouldn-t-miss {
     margin-left: 0;

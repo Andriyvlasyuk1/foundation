@@ -25,4 +25,5 @@ regions:
 
 libraries:
   - 'vlas/global-styling'
+  - 'vlas/fonts'
 
