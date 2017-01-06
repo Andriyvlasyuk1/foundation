@@ -6972,7 +6972,8 @@ footer #block-mainnavigation {
       margin-top: 20px;
       padding: 15px; }
       .path-listings .col-sm-3 section td {
-        vertical-align: middle; }
+        vertical-align: middle;
+        position: relative; }
       .path-listings .col-sm-3 section tr {
         background-color: #fff; }
       .path-listings .col-sm-3 section h2 {
@@ -7015,7 +7016,8 @@ footer #block-mainnavigation {
     margin-top: 20px;
     padding: 15px; }
     .path-blog .col-sm-3 section td {
-      vertical-align: middle; }
+      vertical-align: middle;
+      position: relative; }
     .path-blog .col-sm-3 section tr {
       background-color: #fff; }
     .path-blog .col-sm-3 section h2 {
@@ -7090,7 +7092,8 @@ footer #block-mainnavigation {
   margin-top: 20px;
   padding: 15px; }
   .path-node .col-sm-3 section td {
-    vertical-align: middle; }
+    vertical-align: middle;
+    position: relative; }
   .path-node .col-sm-3 section tr {
     background-color: #fff; }
   .path-node .col-sm-3 section h2 {

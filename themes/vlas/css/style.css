@@ -8779,6 +8779,7 @@ footer #block-mainnavigation .dropdown-menu a {
 }
 .path-listings .col-sm-3 section td {
   vertical-align: middle;
+  position: relative;
 }
 .path-listings .col-sm-3 section tr {
   background-color: #fff;
@@ -8836,6 +8837,7 @@ footer #block-mainnavigation .dropdown-menu a {
 }
 .path-blog .col-sm-3 section td {
   vertical-align: middle;
+  position: relative;
 }
 .path-blog .col-sm-3 section tr {
   background-color: #fff;
@@ -8932,6 +8934,7 @@ footer #block-mainnavigation .dropdown-menu a {
 }
 .path-node .col-sm-3 section td {
   vertical-align: middle;
+  position: relative;
 }
 .path-node .col-sm-3 section tr {
   background-color: #fff;
