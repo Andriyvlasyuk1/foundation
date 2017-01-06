@@ -6516,7 +6516,7 @@ h2 {
   margin-top: 20px; }
 
 /*-----------------search in node page---------------------*/
-.path-node #block-searchform {
+#block-searchform {
   padding: 10px; }
 
 #block-searchform {
@@ -6913,54 +6913,128 @@ footer #block-mainnavigation {
 
 /*---------------Page listings-----------------*/
 /*views fields*/
-.path-listings .region-content .views-row {
-  overflow: hidden;
-  margin-bottom: 30px; }
-
-.path-listings .views-field-field-category a {
-  color: #4CC888;
-  font-weight: bold; }
-
-.path-listings .views-field-field-category a:hover {
-  color: #4CC888;
-  font-weight: bold; }
-
-.path-listings .views-field-title {
-  font-size: 20px; }
-
-.path-listings .views-field-field-category {
-  float: right;
-  margin-right: 20px; }
-
-.path-listings .views-row .views-field-body {
-  display: block; }
-
-.path-listings .views-field-field-content-logo img {
-  float: left;
-  margin-right: 20px; }
+.path-listings {
+  /*----------------------------------------*/ }
+  .path-listings .form--inline .form-item {
+    width: 20%;
+    margin: 0.5em;
+    display: inline-flex; }
+  .path-listings .input-group .form-control {
+    border-radius: 4px; }
+  .path-listings .form--inline input {
+    height: 52px;
+    width: 100%; }
+  .path-listings .form--inline span {
+    display: none; }
+  .path-listings .block-views-blockeasily-discover-unique-city-spots-block-2 .view-filters {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    margin: 0 0 50px 0;
+    padding: 20px 20px 15px 20px;
+    position: relative; }
+  .path-listings .block-views-blockeasily-discover-unique-city-spots-block-2 .input-group {
+    width: 100%; }
+  .path-listings .block-views-blockeasily-discover-unique-city-spots-block-2 .view-content {
+    display: none; }
+  .path-listings .region-content .views-row {
+    overflow: hidden;
+    margin-bottom: 30px; }
+  .path-listings .view-easily-discover-unique-city-spots .views-field-field-category a {
+    color: #4CC888;
+    font-weight: bold; }
+  .path-listings .view-easily-discover-unique-city-spots .views-field-field-category a:hover {
+    color: #4CC888;
+    font-weight: bold; }
+  .path-listings .view-easily-discover-unique-city-spots .views-field-title {
+    font-size: 20px; }
+  .path-listings .view-easily-discover-unique-city-spots .views-field-field-category {
+    float: right;
+    margin-right: 20px; }
+  .path-listings .view-easily-discover-unique-city-spots .views-row .views-field-body {
+    display: block; }
+  .path-listings .view-easily-discover-unique-city-spots .views-field-field-content-logo img {
+    float: left;
+    margin-right: 20px; }
+  .path-listings .view-easily-discover-unique-city-spots .views-field-view-node span a:after {
+    color: #3CC47E;
+    content: "\f054";
+    font-family: 'FontAwesome';
+    font-size: 9px;
+    font-weight: bold;
+    margin-left: 5px; }
+  .path-listings .view-easily-discover-unique-city-spots .views-field-view-node span a:hover {
+    color: #3CC47E; }
+  .path-listings .col-sm-9 {
+    width: 70%; }
+  .path-listings .col-sm-3 {
+    width: 30%; }
+    .path-listings .col-sm-3 section {
+      border: solid 1px #f3f2f1;
+      margin-top: 20px;
+      padding: 15px; }
+      .path-listings .col-sm-3 section td {
+        vertical-align: middle; }
+      .path-listings .col-sm-3 section tr {
+        background-color: #fff; }
+      .path-listings .col-sm-3 section h2 {
+        padding: 0 0 10px 0; }
+    .path-listings .col-sm-3 .block-views-blockcategories-block-2 img {
+      opacity: .5; }
+    .path-listings .col-sm-3 .block-views-blockcategories-block-2 a {
+      color: #666;
+      line-height: 32px; }
+    .path-listings .col-sm-3 .block-views-blocklocations-block-2 a {
+      color: #666; }
+    .path-listings .col-sm-3 .views-field-name a:after {
+      color: #3CC47E;
+      content: "\f054";
+      font-family: 'FontAwesome';
+      font-size: 9px;
+      position: absolute;
+      right: 20px;
+      font-weight: bold; }
 
 /*------------------- Page Blog -------------------------*/
-.view-display-id-page_1 .views-field-field-image img {
+.path-blog .view-display-id-page_1 .views-field-field-image img {
   float: left;
   margin-right: 20px; }
-
-.view-display-id-page_1 .views-field-view-node {
+.path-blog .view-display-id-page_1 .views-field-view-node {
   margin-top: 30px;
   float: right; }
-
-.view-display-id-page_1 .views-field-body {
+.path-blog .view-display-id-page_1 .views-field-body {
   display: block; }
-
-.view-display-id-page_1 .views-row {
+.path-blog .view-display-id-page_1 .views-row {
   display: inline-block;
   border-bottom: solid 1px rgba(0, 0, 0, 0.06);
   margin-bottom: 20px; }
-
 .path-blog .col-sm-9 {
   width: 70%; }
-
 .path-blog .col-sm-3 {
   width: 30%; }
+  .path-blog .col-sm-3 section {
+    border: solid 1px #f3f2f1;
+    margin-top: 20px;
+    padding: 15px; }
+    .path-blog .col-sm-3 section td {
+      vertical-align: middle; }
+    .path-blog .col-sm-3 section tr {
+      background-color: #fff; }
+    .path-blog .col-sm-3 section h2 {
+      padding: 0 0 10px 0; }
+  .path-blog .col-sm-3 .block-views-blockcategories-block-2 img {
+    opacity: .5; }
+  .path-blog .col-sm-3 .block-views-blockcategories-block-2 a {
+    color: #666;
+    line-height: 32px; }
+  .path-blog .col-sm-3 .block-views-blocklocations-block-2 a {
+    color: #666; }
+  .path-blog .col-sm-3 .views-field-name a:after {
+    color: #3CC47E;
+    content: "\f054";
+    font-family: 'FontAwesome';
+    font-size: 9px;
+    position: absolute;
+    right: 20px;
+    font-weight: bold; }
 
 /*--------------------Page Article-----------------------*/
 .panel-1col .block-entity-fieldnodetitle span {
@@ -7121,7 +7195,32 @@ footer #block-mainnavigation {
     .path-node .view-id-media .slick__arrow .slick-prev {
       left: 87%; }
   .path-node .block-views-blockmost-recent-listings-block-2 .views-col {
-    width: 30%; } }
+    width: 30%; }
+
+  /*-----------------blog-----------------------------------*/
+  .path-blog .col-sm-9 {
+    width: 100%; }
+  .path-blog .col-sm-3 {
+    width: 100%; }
+  .path-blog .view-display-id-page_1 span a:after {
+    color: #3CC47E;
+    content: "\f054";
+    font-family: 'FontAwesome';
+    font-size: 9px;
+    font-weight: bold;
+    margin-left: 5px; }
+  .path-blog .view-display-id-page_1 span a:hover {
+    color: #3CC47E; }
+
+  /*----------------------Listings-------------------*/
+  .path-listings .col-sm-9 {
+    width: 100%; }
+  .path-listings .col-sm-3 {
+    width: 100%; }
+  .path-listings .form--inline .form-item {
+    width: 100%;
+    margin: 0.5em;
+    display: inline-flex; } }
 /*-----------------------------------------------------425px--------------------------------------------------------*/
 @media only screen and (max-width: 450px) {
   .path-node .view-id-media .slick__arrow {
