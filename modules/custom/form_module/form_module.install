@@ -1,0 +1,48 @@
+<?php
+
+/**
+* @file
+* Install, update and uninstall functions for the mypage module.
+*/
+
+/**
+* Implements hook_schema().
+*/
+
+function form_module_schema() {
+  $schema['form_module'] = array(
+    'description' => 'Custom form_module table',
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+      ),
+      'first_name' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'last_name' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'timestamp' => array(
+        'type' => 'varchar',
+        'mysql_type' => 'datetime',
+//        'not null' => TRUE,
+      ),
+      'city' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'message' => array(
+        'type' => 'blob',
+        'not null' => TRUE,
+      ),
+   ),
+   'primary key' => array('id'),
+  );
+  return $schema;
+}

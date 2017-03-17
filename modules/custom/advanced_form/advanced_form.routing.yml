@@ -1,0 +1,9 @@
+advanced_form.form_page:
+  path: '/advanced-form'
+  defaults:
+   # _controller: 'Drupal\advanced_form\Controller\FormController::FormPage'
+    _form: Drupal\advanced_form\Form\Advanced_Form
+    _title: Advanced Form
+  requirements:
+    _permission: 'access content'
+

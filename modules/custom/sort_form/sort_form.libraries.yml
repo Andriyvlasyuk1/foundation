@@ -1,0 +1,7 @@
+sort_form_js:
+  version: 1.x
+  js:
+    js/sort_form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

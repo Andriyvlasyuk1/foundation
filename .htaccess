@@ -171,6 +171,11 @@ AddEncoding gzip svgz
     RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1]
     RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1]
 
+    #Redirect 301 drupal8.loc/articles/(/*)$ drupal8.loc/new-articles/
+#    Redirect 301 /articles/2017-03-06/new-article-test-redirect http://www.drupal8.loc/new-articles/2017-03-06/new-article-test-redirect
+#    RewriteRule ^/articles/(.*)$ /new-articles/$1 [R=301,NC,L]
+#    RewriteRule /articles www.drupal8.loc/new-articles
+
     <FilesMatch "(\.js\.gz|\.css\.gz)$">
       # Serve correct encoding type.
       Header set Content-Encoding gzip
@@ -187,3 +192,4 @@ AddEncoding gzip svgz
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
 </IfModule>
+ Redirect 301 /articles /new-articles

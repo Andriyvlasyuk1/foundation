@@ -8962,6 +8962,13 @@ footer #block-mainnavigation .dropdown-menu a {
   font-weight: bold;
 }
 
+.path-products .form-item-sort-by {
+  display: none;
+}
+.path-products #edit-actions {
+  display: none;
+}
+
 /*----------------------------------------------------768px--------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
   .path-frontpage .form--inline .form-item {

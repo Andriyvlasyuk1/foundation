@@ -1,0 +1,21 @@
+form_module.mypage:
+  path: '/mypage'
+  defaults:
+    _controller: 'Drupal\form_module\Controller\MyPageController::customPage'
+    _title: 'My custom page'
+  requirements:
+    _permission: 'access content'
+form_module.form:
+  path: '/form'
+  defaults:
+    _title: 'My first Form'
+    _form: 'Drupal\form_module\Form\Form_About'
+  requirements:
+    _permission: 'access content'
+form_module.redirect:
+  path: '/redirect'
+  defaults:
+    _controller: 'Drupal\form_module\Controller\MyPageController::my_redirect'
+    _title: 'My page'
+  requirements:
+    _permissions: 'access user profiles'

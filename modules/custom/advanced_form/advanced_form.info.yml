@@ -1,0 +1,5 @@
+name: Advanced Form
+description: Form for good features
+type: module
+package: Custom
+core: 8.x

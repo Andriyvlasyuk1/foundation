@@ -1,0 +1,48 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: user
+ * Date: 13.03.17
+ * Time: 12:07
+ */
+
+//function sort_form_form_alter()
+function sort_form_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if ($form_id == 'views_exposed_form') {
+    $form['sort_order']['#options'] = [
+      'ASC' => t('from cheapest to expensive'),
+      'DESC' => t('from expensive to cheapest'),
+    ];
+
+    $form['sort_order']['#title'] = t('Sorting');
+    $form['sort_order']['#attributes']['disabled'] = TRUE;
+
+    $form['checkbox'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Click to select sorting'),
+    ];
+
+    $form['#attached']['library'][] = 'sort_form/sort_form_js';
+
+    $i = 'buu';
+  }
+
+  if ($form_id == 'user_login_form') {
+
+    $form['name']['#weight'] = 1;
+    $form['pass']['#weight'] = 2;
+
+    $form['custom-field'] = [
+      '#type' => 'textfield',
+      '#title' => t('Custom field'),
+      '#weight' => 3,
+    ];
+
+
+  }
+}
+
+
+
+

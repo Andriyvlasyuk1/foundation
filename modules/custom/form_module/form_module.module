@@ -1,0 +1,15 @@
+<?php
+
+/**
+* Implements hook_theme().
+*/
+function form_module_theme() {
+ return array(
+   'form_module_theme' => array( // Назва теми
+     'variables' => array( // Масив назви змінних
+       'data' => array(),
+     ),
+     'templates' => 'templates/form_module-theme', // Шлях до шаблону без .html.twig, в якому і будуть доступні змінні, що вказані вище
+   ),
+ );
+}

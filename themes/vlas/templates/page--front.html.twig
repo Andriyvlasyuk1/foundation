@@ -172,7 +172,7 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {# {{ page.content }} #}	 
+          {# {{ page.content }} #}
 	{{ page.front_page_content }}
         {% endblock %}
       </section>
@@ -189,14 +189,14 @@
   </div>
 {% endblock %}
 
-<div class="companies"> 
+<div class="companies">
 	{{ page.companies }}
 </div>
 
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
-	{# {{ page.companies }} #}      
+	{# {{ page.companies }} #}
 	{{ page.footer }}
     </footer>
   {% endblock %}
